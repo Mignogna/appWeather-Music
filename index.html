@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="./assets/10d.png" type="image/x-icon" />
+    <title>Weather & Music</title>
+  </head>
+  <body>
+    <section class="container">
+      <video class="video" autoplay muted loop>
+        <source id="video-source" src="./images/rain.mp4" type="video/mp4" />
+      </video>
+      <div class="box">
+        <div class="search">
+          <button onclick="searchBtn()">
+            <img src="./assets/search.png" alt="search-icon" />
+          </button>
+          <input
+            type="text"
+            id="input-search"
+            placeholder="Enter a city name"
+          />
+        </div>
+        <div class="envelope">
+          <div class="weather-content">
+            <img src="./assets/01d.png" alt="" class="weather-icon" />
+            <h2 class="city-name">How is the weather in...</h2>
+            <h3 class="temperature">ºC</h3>
+            <div class="variation-content">
+              <p class="maxTemperature">Max: ºC</p>
+              <p class="minTemperature">Min: ºC</p>
+            </div>
+          </div>
+          <div class="music-content">
+            <img src="./assets/Music.png" alt="music-icon" />
+            <h2>Playlist</h2>
+            <ul class="playlist-box">
+              <li>
+                <img src="./assets/dailyLift.png" alt="spotify-icon" />
+                <p>Nouveautés Pop</p>
+              </li>
+              <li>
+                <img src="./assets/dailyLift.png" alt="spotify-icon" />
+                <p>Nouveautés Pop</p>
+              </li>
+              <li>
+                <img src="./assets/dailyLift.png" alt="spotify-icon" />
+                <p>Nouveautés Pop</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>

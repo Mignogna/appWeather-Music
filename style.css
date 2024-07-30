@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  height: 100vh;
+  width: 100vw;
+  font-family: "Alumni Sans", sans-serif;
+}
+.video {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  background-position: center;
+  z-index: -1;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1000px;
+  padding: 0 2rem;
+}
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+}
+.search button {
+  margin: 0rem 0.5rem 0rem;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background-color: #4d54ff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  transform: translate(53px, 0px);
+}
+.search img {
+  width: 40px;
+  height: 40px;
+}
+.search input {
+  height: 50px;
+  width: 40px;
+  padding: 0.5rem 0.5rem 0.5rem 2.6rem;
+  visibility: hidden;
+  border: none;
+  outline: none;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  border-radius: 100px;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.25);
+}
+.search input::placeholder {
+  color: gray;
+  font-size: 1rem;
+}
+.envelope {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 90%;
+  visibility: hidden;
+}
+.weather-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 2rem;
+  width: 350px;
+  height: 100%;
+  max-height: 500px;
+  z-index: 1;
+}
+.music-content img,
+.weather-content img {
+  height: 11.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.weather-content h2 {
+  width: 325px;
+  margin-bottom: 0.625rem;
+  font-size: 3.375rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+.weather-content h3 {
+  font-size: 8rem;
+  line-height: 6rem;
+  font-weight: 400;
+  margin-bottom: 1.25rem;
+}
+.variation-content {
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+  width: 100%;
+  max-width: 200px;
+  margin-bottom: 0.25rem;
+  text-transform: uppercase;
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+.weather-content::after {
+  content: "";
+  position: absolute;
+  top: 8rem;
+  left: 0;
+  width: 340px;
+  height: 350px;
+  margin-bottom: 1rem;
+  border-radius: 50px;
+  background: linear-gradient(
+    180deg,
+    rgba(194, 188, 194, 0) 0%,
+    rgba(194, 188, 194, 0.99)
+  );
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
+  filter: blur(4.5px);
+  z-index: -1;
+}
+.music-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 2rem;
+  width: 350px;
+  height: 100%;
+  max-height: 500px;
+  z-index: 1;
+}
+.music-content h2 {
+  width: 325px;
+  margin-bottom: 0.625rem;
+  font-size: 3.375rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+}
+.playlist-box {
+  list-style: none;
+  width: 100%;
+  visibility: hidden;
+}
+.playlist-box li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 0rem 1rem;
+}
+.playlist-box li img {
+  width: 40px;
+  height: 40px;
+  margin-right: 1rem;
+}
+.playlist-box li p {
+  width: 210px;
+  font-size: 2rem;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.music-content::after {
+  content: "";
+  position: absolute;
+  top: 8rem;
+  left: 0;
+  width: 340px;
+  height: 350px;
+  margin-bottom: 1rem;
+  border-radius: 50px;
+  background: linear-gradient(
+    180deg,
+    rgba(194, 188, 194, 0) 0%,
+    rgba(194, 188, 194, 0.99)
+  );
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
+  filter: blur(4.5px);
+  z-index: -1;
+}
+@media (max-width: 900px) {
+  .container {
+    height: auto;
+    padding: 2rem 1rem;
+  }
+  .envelope {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .weather-content {
+    width: 250px;
+  }
+  .weather-content img {
+    height: 8.5rem;
+  }
+  .weather-content h2 {
+    font-size: 2.375rem;
+  }
+  .weather-content h3 {
+    font-size: 5rem;
+    line-height: 3rem;
+  }
+  .variation-content {
+    max-width: 170px;
+  }
+  .variation-content p {
+    font-size: 1.5rem;
+    line-height: initial;
+  }
+  .weather-content::after {
+    width: 250px;
+    height: 290px;
+    top: 4rem;
+  }
+  .music-content {
+    width: 250px;
+  }
+  .music-content img {
+    width: 6.5rem;
+    height: 6.5rem;
+    margin-bottom: 1rem;
+    margin-top: 0rem;
+  }
+  .music-content h2 {
+    font-size: 2.375rem;
+    margin-bottom: 1.75rem;
+  }
+  .playlist-box li img {
+    width: 30px;
+    height: 30px;
+  }
+  .playlist-box li p {
+    font-size: 1.5rem;
+  }
+  .music-content::after {
+    width: 260px;
+    height: 320px;
+    top: 7rem;
+  }
+}
